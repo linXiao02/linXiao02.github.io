@@ -1,1140 +1,334 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
-  <link rel="mask-icon" href="/images/favicon.png" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"linxiao02.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
-
-  <meta name="description" content="分享自己喜欢的一切">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>林の小站 - 沉得住气 才会胜利</title><meta name="author" content="XiaoLin"><meta name="copyright" content="XiaoLin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="分享自己喜欢的一切">
 <meta property="og:type" content="website">
-<meta property="og:title" content="小林屋">
+<meta property="og:title" content="林の小站">
 <meta property="og:url" content="http://linxiao02.github.io/index.html">
-<meta property="og:site_name" content="小林屋">
+<meta property="og:site_name" content="林の小站">
 <meta property="og:description" content="分享自己喜欢的一切">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://linxiao02.github.io/img/avatar.png">
 <meta property="article:author" content="XiaoLin">
 <meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://linxiao02.github.io/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>小林屋</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
+<meta name="twitter:image" content="http://linxiao02.github.io/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://linxiao02.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '林の小站',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-10-15 01:28:53'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
   }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">小林屋</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">键盘敲烂 月薪过万</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="reading-progress-bar"></div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://linxiao02.github.io/posts/5c27.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="XiaoLin">
-      <meta itemprop="description" content="分享自己喜欢的一切">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小林屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/5c27.html" class="post-title-link" itemprop="url">JDBC</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-10-14 22:19:58 / 修改时间：22:25:56" itemprop="dateCreated datePublished" datetime="2022-10-14T22:19:58+08:00">2022-10-14</time>
-            </span>
-
-          
-            <span id="/posts/5c27.html" class="post-meta-item leancloud_visitors" data-flag-title="JDBC" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/5c27.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/5c27.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>46k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>42 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="JDBC核心技术"><a href="#JDBC核心技术" class="headerlink" title="JDBC核心技术"></a>JDBC核心技术</h1><p>讲师：宋红康</p>
-<p>微博：尚硅谷-宋红康</p>
-<hr>
-<h2 id="第1章：JDBC概述"><a href="#第1章：JDBC概述" class="headerlink" title="第1章：JDBC概述"></a>第1章：JDBC概述</h2><h3 id="1-1-数据的持久化"><a href="#1-1-数据的持久化" class="headerlink" title="1.1 数据的持久化"></a>1.1 数据的持久化</h3><ul>
-<li><p>持久化(persistence)：<strong>把数据保存到可掉电式存储设备中以供之后使用</strong>。大多数情况下，特别是企业级应用，<strong>数据持久化意味着将内存中的数据保存到硬盘</strong>上加以”固化”<strong>，而持久化的实现过程大多通过各种关系数据库来完成</strong>。</p>
-</li>
-<li><p>持久化的主要应用是将内存中的数据存储在关系型数据库中，当然也可以存储在磁盘文件、XML数据文件中。</p>
-<p><img src="/%E5%B0%9A%E7%A1%85%E8%B0%B7_%E5%AE%8B%E7%BA%A2%E5%BA%B7_JDBC.assets/1566741430592.png" alt="1566741430592"> </p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/5c27.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://linxiao02.github.io/posts/7ba2.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="XiaoLin">
-      <meta itemprop="description" content="分享自己喜欢的一切">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小林屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/7ba2.html" class="post-title-link" itemprop="url">前端基础----三件套</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-10-14 22:19:46 / 修改时间：22:27:17" itemprop="dateCreated datePublished" datetime="2022-10-14T22:19:46+08:00">2022-10-14</time>
-            </span>
-
-          
-            <span id="/posts/7ba2.html" class="post-meta-item leancloud_visitors" data-flag-title="前端基础----三件套" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/7ba2.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/7ba2.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>184k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2:47</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="前端基础—-三件套"><a href="#前端基础—-三件套" class="headerlink" title="前端基础—-三件套"></a>前端基础—-三件套</h1><p>[TOC]</p>
-<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>Zeal64位下载<a target="_blank" rel="noopener" href="https://wwr.lanzoui.com/iQhP5urk3gb">https://wwr.lanzoui.com/iQhP5urk3gb</a><br>Html5<a target="_blank" rel="noopener" href="http://search.bilibili.com/all?from_source=webcommentline_search&keyword=%E6%96%87%E6%A1%A3%E4%B8%8B%E8%BD%BD">文档下载</a><a target="_blank" rel="noopener" href="https://wwr.lanzoui.com/iqAiiurklfi">https://wwr.lanzoui.com/iqAiiurklfi</a><br>CSS3文档下载<a target="_blank" rel="noopener" href="https://wwr.lanzoui.com/iA86gurklgj">https://wwr.lanzoui.com/iA86gurklgj</a><br>文档下载完解压，将html.docset和css.docset放到Zeal-x64&#x2F;docset文件夹下<br>启动zeal.exe程序就可以直接使用了</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/7ba2.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://linxiao02.github.io/posts/26f9.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="XiaoLin">
-      <meta itemprop="description" content="分享自己喜欢的一切">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小林屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/26f9.html" class="post-title-link" itemprop="url">MySQL</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-10-14 22:19:15 / 修改时间：22:26:46" itemprop="dateCreated datePublished" datetime="2022-10-14T22:19:15+08:00">2022-10-14</time>
-            </span>
-
-          
-            <span id="/posts/26f9.html" class="post-meta-item leancloud_visitors" data-flag-title="MySQL" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/26f9.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/26f9.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>61k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>55 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><p>什么是数据库？什么是数据库管理系统？什么是MySQL？他们之间的关系是什么？</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">数据库：</span><br><span class="line">	英文单词DataBase，简称DB。按照一定格式存储数据的一些文件的组合。</span><br><span class="line">	顾名思义：存储数据的仓库，实际上就是一堆文件。这些文件中存储了具有特定格式的数据。</span><br><span class="line">数据库管理系统：</span><br><span class="line">		DataBaseManagement，简称DBMS。</span><br><span class="line">		数据库管理系统是专门用来管理数据库中数据的，数据库管理系统可以对数据库当中的数据进行增删改查。</span><br><span class="line">常见的数据库管理系统：</span><br><span class="line">		MySQL、Oracle、MS SqlServer、DB2、sybase等....</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/26f9.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://linxiao02.github.io/posts/f1de.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="XiaoLin">
-      <meta itemprop="description" content="分享自己喜欢的一切">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小林屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/f1de.html" class="post-title-link" itemprop="url">MyBatis</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-10-14 22:19:00 / 修改时间：22:26:33" itemprop="dateCreated datePublished" datetime="2022-10-14T22:19:00+08:00">2022-10-14</time>
-            </span>
-
-          
-            <span id="/posts/f1de.html" class="post-meta-item leancloud_visitors" data-flag-title="MyBatis" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/f1de.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/f1de.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>9.4k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>9 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="MyBatis"><a href="#MyBatis" class="headerlink" title="MyBatis"></a>MyBatis</h1><p><a target="_blank" rel="noopener" href="https://mybatis.net.cn/">MyBatis中文文档</a></p>
-<h2 id="一、MyBatis简介"><a href="#一、MyBatis简介" class="headerlink" title="一、MyBatis简介"></a>一、MyBatis简介</h2><h3 id="1、MyBatis历史"><a href="#1、MyBatis历史" class="headerlink" title="1、MyBatis历史"></a>1、MyBatis历史</h3><p>MyBatis最初是Apache的一个开源项目iBatis, 2010年6月这个项目由Apache Software Foundation迁<br>移到了Google Code。随着开发团队转投Google Code旗下， iBatis3.x正式更名为MyBatis。代码于<br>2013年11月迁移到Github。<br>iBatis一词来源于“internet”和“abatis”的组合，是一个基于Java的持久层框架。 iBatis提供的持久层框架<br>包括SQL Maps和Data Access Objects（DAO）。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/f1de.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://linxiao02.github.io/posts/5878.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="XiaoLin">
-      <meta itemprop="description" content="分享自己喜欢的一切">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小林屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/5878.html" class="post-title-link" itemprop="url">Markdown语法</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-10-14 22:18:34 / 修改时间：22:26:08" itemprop="dateCreated datePublished" datetime="2022-10-14T22:18:34+08:00">2022-10-14</time>
-            </span>
-
-          
-            <span id="/posts/5878.html" class="post-meta-item leancloud_visitors" data-flag-title="Markdown语法" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/5878.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/5878.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 align="center">Markdown语法</h1>
-
-<h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><p>两种方法：</p>
-<p>1）使用快捷键Ctrl+(1-6)</p>
-<p>1）使用#+空格+文字(一个#代表一级，两个代表二级……)</p>
-<p>例：</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/5878.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://linxiao02.github.io/posts/9478.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="XiaoLin">
-      <meta itemprop="description" content="分享自己喜欢的一切">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小林屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/9478.html" class="post-title-link" itemprop="url">Maven</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-10-14 22:09:32 / 修改时间：22:26:24" itemprop="dateCreated datePublished" datetime="2022-10-14T22:09:32+08:00">2022-10-14</time>
-            </span>
-
-          
-            <span id="/posts/9478.html" class="post-meta-item leancloud_visitors" data-flag-title="Maven" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/9478.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/9478.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>11k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>10 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h1><h2 id="一、小白入门"><a href="#一、小白入门" class="headerlink" title="一、小白入门"></a>一、小白入门</h2><h3 id="第一章、Maven概述"><a href="#第一章、Maven概述" class="headerlink" title="第一章、Maven概述"></a>第一章、Maven概述</h3><h4 id="1、为什么要学习Maven？"><a href="#1、为什么要学习Maven？" class="headerlink" title="1、为什么要学习Maven？"></a>1、为什么要学习Maven？</h4><h5 id="1、Maven作为依赖管理工具"><a href="#1、Maven作为依赖管理工具" class="headerlink" title="1、Maven作为依赖管理工具"></a>1、Maven作为依赖管理工具</h5><ol>
-<li><p>jar包的规模</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">随着我们使用越来越多的框架，或者框架封装程度越来越高，项目中使用的jar包也越来越多，项目中，一个模块里面要用到上百个jar包是非常正常的。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>比如下面这个例子，我们只用到SpringBoot、SpringCloud框架中的三个功能：</p>
-<ul>
-<li>Nacos服务器注册发现</li>
-<li>Web框架环境</li>
-<li>图模块技术Thyme leaf</li>
-</ul>
-<p>最终导入了106个jar包</p>
-<p>而如果使用Maven来引用这些jar包只需要配置三个【依赖】。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/9478.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://linxiao02.github.io/posts/2148.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="XiaoLin">
-      <meta itemprop="description" content="分享自己喜欢的一切">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小林屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/2148.html" class="post-title-link" itemprop="url">Git学习笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-10-14 22:00:08 / 修改时间：23:06:55" itemprop="dateCreated datePublished" datetime="2022-10-14T22:00:08+08:00">2022-10-14</time>
-            </span>
-
-          
-            <span id="/posts/2148.html" class="post-meta-item leancloud_visitors" data-flag-title="Git学习笔记" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/2148.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/2148.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4.6k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <meta name="referrer" content="no-referrer" />
-
-<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><h2 id="一、需要掌握的知识点"><a href="#一、需要掌握的知识点" class="headerlink" title="一、需要掌握的知识点"></a>一、需要掌握的知识点</h2><h3 id="1-1、Git"><a href="#1-1、Git" class="headerlink" title="1.1、Git"></a>1.1、Git</h3><p>1、Git介绍，分布式版本控制工具  VS  集中式版本控制工具</p>
-<p>2、Git安装，基于官网发布的最新版本2.31.1安装讲解</p>
-<p>3、Git命令，基于开发案例，详细讲解git的常用命令</p>
-<p>4、Git分支，分支特性，分支创建，分支转换，分支合并，代码合并冲突解决</p>
-<p>5、Idea集成Git</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/2148.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
       }
     }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="XiaoLin"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">XiaoLin</p>
-  <div class="site-description" itemprop="description">分享自己喜欢的一切</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">7</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/linXiao02" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;linXiao02" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:1849569695@qq.com" title="E-Mail → mailto:1849569695@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-  </div>
-
-
-
-      </div>
-        <div class="back-to-top motion-element">
-          <i class="fa fa-arrow-up"></i>
-          <span>0%</span>
-        </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">XiaoLin</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
-    </span>
-      <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">317k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:48</span>
-</div>
-<!-- 网站运行时间的设置 -->
-<span id="timeDate">载入天数...</span>
-<span id="times">载入时分秒...</span>
-<script>
-    var now = new Date();
-    function createtime() {
-        var grt= new Date("08/10/2021 12:00:00");//此处修改你的建站时间或者网站上线时间
-        now.setTime(now.getTime()+250);
-        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
-        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
-        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
-        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
-        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
     }
-    setInterval("createtime()",250);
-</script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span><br></span>
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/loading.gif" data-original="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about"><i class="fa-fw /about/"></i><span> 0</span></a></li><li><a class="site-page child" href="/myself"><i class="fa-fw /myself/"></i><span> 1</span></a></li><li><a class="site-page child" href="/butterfly"><i class="fa-fw https://github.com/jerryc127/hexo-theme-butterfly/"></i><span> 2</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/bg.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">林の小站</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about"><i class="fa-fw /about/"></i><span> 0</span></a></li><li><a class="site-page child" href="/myself"><i class="fa-fw /myself/"></i><span> 1</span></a></li><li><a class="site-page child" href="/butterfly"><i class="fa-fw https://github.com/jerryc127/hexo-theme-butterfly/"></i><span> 2</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">林の小站</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/posts/3d18.html" title="categories"><img class="post_bg" src="/img/loading.gif" data-original="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="categories"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/3d18.html" title="categories">categories</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-14T16:28:38.000Z" title="发表于 2022-10-15 00:28:38">2022-10-15</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/5c27.html" title="JDBC"><img class="post_bg" src="/img/loading.gif" data-original="http:/img/archive.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JDBC"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/5c27.html" title="JDBC">JDBC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-14T14:19:58.000Z" title="发表于 2022-10-14 22:19:58">2022-10-14</time></span></div><div class="content">JDBC核心技术讲师：宋红康
+微博：尚硅谷-宋红康
 
-<span class="post-meta-item-icon">
-      <i class="fa fa-user"></i>
-</span>
-<span>总访客&nbsp<span id="busuanzi_value_site_uv"></span>&nbsp人</span>
-    <span class="post-meta-divider">|</span>
-<span class="post-meta-item-icon">
-      <i class="fa fa-eye"></i>
-</span>
-    <span>总访问量&nbsp<span id="busuanzi_value_site_pv"></span>&nbsp次</span>
+第1章：JDBC概述1.1 数据的持久化
+持久化(persistence)：把数据保存到可掉电式存储设备中以供之后使用。大多数情况下，特别是企业级应用，数据持久化意味着将内存中的数据保存到硬盘上加以”固化”，而持久化的实现过程大多通过各种关系数据库来完成。
 
-        
+持久化的主要应用是将内存中的数据存储在关系型数据库中，当然也可以存储在磁盘文件、XML数据文件中。
+ 
 
 
+1.2 Java中的数据存储技术
+在Java中，数据库存取技术可分为如下几类：
 
+JDBC直接访问数据库
 
+JDO (Java Data Object )技术
 
+第三方O&#x2F;R工具，如Hibernate, Mybatis 等
 
 
 
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
+JDBC是java访问数据库的基石，JDO、Hibernate、MyBatis等只是更好的封装了JDBC。
 
 
-<script src="/js/schemes/pisces.js"></script>
+1.3 JDBC介绍
+JDBC(Java Database Connectivity)是一个独立于特定数据库管理系统、通用的SQL数据库存取和操作的公共接口（一组API），定义了用来访问数据库的标准Java类库，（java.s ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/7ba2.html" title="前端基础----三件套"><img class="post_bg" src="/img/loading.gif" data-original="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端基础----三件套"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/7ba2.html" title="前端基础----三件套">前端基础----三件套</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-14T14:19:46.000Z" title="发表于 2022-10-14 22:19:46">2022-10-14</time></span></div><div class="content">前端基础—-三件套[TOC]
+一、前言Zeal64位下载https://wwr.lanzoui.com/iQhP5urk3gbHtml5文档下载https://wwr.lanzoui.com/iqAiiurklfiCSS3文档下载https://wwr.lanzoui.com/iA86gurklgj文档下载完解压，将html.docset和css.docset放到Zeal-x64&#x2F;docset文件夹下启动zeal.exe程序就可以直接使用了
 
 
-<script src="/js/next-boot.js"></script>
+1、客户端
+
+2、网页
+3、历史蒂姆·伯纳斯李爵士— 万维网的发明人
+1991年8月6日，世界上第一个服务器和第一个网站在欧洲核子研究中心上线。
+第一个网站：http://info.cern.ch/hypertext/WWW/TheProject.html
+4、浏览器和网页
+
+5、浏览器的问题
+不同浏览器可能解析出来的页面不一样
+6、W3C的建立
+7、网页的结构
+1、结构、表现、行为
+结构
+HTML用于描述页面的结构
 
 
+表现
+CSS用于控制页面中元素的样式
 
 
-  
-
-
-
-
-
-
+行为
+JavaScript用于响应用户操作
 
 
 
 
+二、HTMLHTML ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/26f9.html" title="MySQL"><img class="post_bg" src="/img/loading.gif" data-original="http:/img/archive.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySQL"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/26f9.html" title="MySQL">MySQL</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-14T14:19:15.000Z" title="发表于 2022-10-14 22:19:15">2022-10-14</time></span></div><div class="content">数据库什么是数据库？什么是数据库管理系统？什么是MySQL？他们之间的关系是什么？
+12345678数据库：	英文单词DataBase，简称DB。按照一定格式存储数据的一些文件的组合。	顾名思义：存储数据的仓库，实际上就是一堆文件。这些文件中存储了具有特定格式的数据。数据库管理系统：		DataBaseManagement，简称DBMS。		数据库管理系统是专门用来管理数据库中数据的，数据库管理系统可以对数据库当中的数据进行增删改查。常见的数据库管理系统：		MySQL、Oracle、MS SqlServer、DB2、sybase等....
 
 
 
+SQL： 结构化查询语言
+12345678910程序员需要学习SQL语句，程序员通过编写SQL语句，然后DBMS负责执行SQL语句，最终来完成数据库中数据的增删改查操作。SQL是一套标准，程序员主要学习的就是SQL语句，这个SQL在mysql中可以使用，同时在Oracle中也可以使用，在DB2中也可以使用。三者之间的关系？	DBMS--执行--&gt; SQL --操作--&gt; DB先安装数据库管理系统MySQL，然后学习SQL语句怎么写 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/f1de.html" title="MyBatis"><img class="post_bg" src="/img/loading.gif" data-original="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MyBatis"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/f1de.html" title="MyBatis">MyBatis</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-14T14:19:00.000Z" title="发表于 2022-10-14 22:19:00">2022-10-14</time></span></div><div class="content">MyBatisMyBatis中文文档
+一、MyBatis简介1、MyBatis历史MyBatis最初是Apache的一个开源项目iBatis, 2010年6月这个项目由Apache Software Foundation迁移到了Google Code。随着开发团队转投Google Code旗下， iBatis3.x正式更名为MyBatis。代码于2013年11月迁移到Github。iBatis一词来源于“internet”和“abatis”的组合，是一个基于Java的持久层框架。 iBatis提供的持久层框架包括SQL Maps和Data Access Objects（DAO）。
 
 
-  
+2、MyBatis特性1） MyBatis 是支持定制化 SQL、存储过程以及高级映射的优秀的持久层框架2） MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集3） MyBatis可以使用简单的XML或注解用于配置和原始映射，将接口和Java的POJO（Plain Old JavaObjects，普通的Java对象）映射成数据库中的记录
+4） MyBatis 是一个 半自动的OR ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/5878.html" title="Markdown语法"><img class="post_bg" src="/img/loading.gif" data-original="http:/img/archive.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Markdown语法"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/5878.html" title="Markdown语法">Markdown语法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-14T14:18:34.000Z" title="发表于 2022-10-14 22:18:34">2022-10-14</time></span></div><div class="content">Markdown语法
 
-  
+1.标题两种方法：
+1）使用快捷键Ctrl+(1-6)
+1）使用#+空格+文字(一个#代表一级，两个代表二级……)
+例：
 
 
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : false,
-      notify     : false,
-      appId      : '1Cu8GgUBJAEFY6zQnBBwsG6j-gzGzoHsz',
-      appKey     : 'eALJbOTb6iHtCBiGucb0c0tv',
-      placeholder: "欢迎大家评论✧*٩(ˊᗜˋ*)و✧*",
-      avatar     : 'retro',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : true,
-      lang       : '' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
-</script>
+一级标题二级标题2.段落段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用两个以上空格加上回车（引用中换行省略回车）。
+换行不换段：shift+enter
+换段：enter
+如：
+我不换段哈哈哈
+我换了
+3.区块引用在段落的每行或者只在第一行使用符号”&gt;”，还可使用多个嵌套引用，如：
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
-</html>
+区块引用
+
+嵌套引用
+
+
+4.代码区块输入法切换为非中文，输入键盘左上角ESc下的按键，连续输入三次 ，在输入对应的编程语言类型，则会出现代码框，即可输入代码。
+代码区块：
+12345void main()&#123;    printf(&quot;Hello,Markdown.&quot;);&#125;
+
+5.强调（加粗）在强调内容两侧分别加上**或者–
+如：
+加粗
+6.斜体在要使用斜体的内容左右两侧加上*或-
+如：
+斜体
+7.下划线HTML的语法：
+12&lt;u&gt;我是下划线&lt;/u&gt;或者快捷键CT ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/9478.html" title="Maven"><img class="post_bg" src="/img/loading.gif" data-original="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Maven"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/9478.html" title="Maven">Maven</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-14T14:09:32.000Z" title="发表于 2022-10-14 22:09:32">2022-10-14</time></span></div><div class="content">Maven一、小白入门第一章、Maven概述1、为什么要学习Maven？1、Maven作为依赖管理工具
+jar包的规模
+1随着我们使用越来越多的框架，或者框架封装程度越来越高，项目中使用的jar包也越来越多，项目中，一个模块里面要用到上百个jar包是非常正常的。
+
+比如下面这个例子，我们只用到SpringBoot、SpringCloud框架中的三个功能：
+
+Nacos服务器注册发现
+Web框架环境
+图模块技术Thyme leaf
+
+最终导入了106个jar包
+而如果使用Maven来引用这些jar包只需要配置三个【依赖】。
+
+
+jar包的来源
+
+
+jar之间的依赖关系
+
+
+
+2、Maven作为构建管理工具
+你没有注意过的构建
+1你可以不使用Maven，但是构建必须要做，当我们使用idea进行开发时，构建是idea替我们做的。
+
+
+
+脱离IDE环境仍需构建
+
+
+
+3、结论
+管理规模庞大的jar白，需要专门的工具
+脱离ide环境执行构建操作，需要专门的工具
+
+2、什么是Maven？Maven是Apache软件基金会组织维护的一款专门为java项目提供构建和依赖管理支持的工具。
+1、构建
+
+2 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2148.html" title="Git学习笔记"><img class="post_bg" src="/img/loading.gif" data-original="http:/img/archive.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git学习笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2148.html" title="Git学习笔记">Git学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-14T14:00:08.506Z" title="发表于 2022-10-14 22:00:08">2022-10-14</time></span></div><div class="content">
+
+Git一、需要掌握的知识点1.1、Git1、Git介绍，分布式版本控制工具  VS  集中式版本控制工具
+2、Git安装，基于官网发布的最新版本2.31.1安装讲解
+3、Git命令，基于开发案例，详细讲解git的常用命令
+4、Git分支，分支特性，分支创建，分支转换，分支合并，代码合并冲突解决
+5、Idea集成Git
+
+1.2、GitHub1、创建远程库
+2、代码推送Push
+3、代码拉取Pull
+4、代码克隆Clone
+5、SSH免密登录
+6、Idea集成GitHub
+1.3、Gitee码云1、码云创建远程库
+2、Idea集成Gitee码云
+3、码云连接GitHub进行代码的复制和迁移
+1.4、GitLab1、GitLab服务器的搭建和部署
+2、Idea集成GitLab
+二、课程目标五小时熟练掌握Git GitHub GitLab Gitee码云的使用
+三、正式学习1、Git概述123456Git是一个免费的、开源的分布式版本控制系统，可以快速高效的处理从小型到大型的各种项目。Git易于学习，占地面积小，性能极快，它有廉价的本地库，方便的暂存区域和多个工作流分支等特性，其性能优于 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/loading.gif" data-original="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XiaoLin</div><div class="author-info__description">分享自己喜欢的一切</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/3d18.html" title="categories"><img src="/img/loading.gif" data-original="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="categories"/></a><div class="content"><a class="title" href="/posts/3d18.html" title="categories">categories</a><time datetime="2022-10-14T16:28:38.000Z" title="发表于 2022-10-15 00:28:38">2022-10-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5c27.html" title="JDBC"><img src="/img/loading.gif" data-original="http:/img/archive.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JDBC"/></a><div class="content"><a class="title" href="/posts/5c27.html" title="JDBC">JDBC</a><time datetime="2022-10-14T14:19:58.000Z" title="发表于 2022-10-14 22:19:58">2022-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7ba2.html" title="前端基础----三件套"><img src="/img/loading.gif" data-original="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端基础----三件套"/></a><div class="content"><a class="title" href="/posts/7ba2.html" title="前端基础----三件套">前端基础----三件套</a><time datetime="2022-10-14T14:19:46.000Z" title="发表于 2022-10-14 22:19:46">2022-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/26f9.html" title="MySQL"><img src="/img/loading.gif" data-original="http:/img/archive.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySQL"/></a><div class="content"><a class="title" href="/posts/26f9.html" title="MySQL">MySQL</a><time datetime="2022-10-14T14:19:15.000Z" title="发表于 2022-10-14 22:19:15">2022-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f1de.html" title="MyBatis"><img src="/img/loading.gif" data-original="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MyBatis"/></a><div class="content"><a class="title" href="/posts/f1de.html" title="MyBatis">MyBatis</a><time datetime="2022-10-14T14:19:00.000Z" title="发表于 2022-10-14 22:19:00">2022-10-14</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">8</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">8</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-10-14T17:28:52.396Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By XiaoLin</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["你在抱怨什么呢","为明天到来的事，说人生像是没有意义","没有选择会是唯一的路","这不是你自己的问题，人终归要好好去生活"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '你在抱怨什么呢'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(e){e.imageLazyLoadSetting.processImages=t;var n=e.imageLazyLoadSetting.isSPA,i=e.imageLazyLoadSetting.preloadRatio||1,r=o();function o(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){n&&(r=o());for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(e.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];e=function(){r=r.filter(function(t){return o!==t})},(t=o).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,t.removeAttribute("data-original"),e&&e()},t.src!==i&&(n.src=i))}()}function a(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",a),e.addEventListener("resize",a),e.addEventListener("orientationchange",a)}(this);</script></body></html>
