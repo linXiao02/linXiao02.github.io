@@ -1193,7 +1193,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d061f1;
+  background: #71ffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2588,4 +2588,52 @@ ul.breadcrumb li + li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #ff106c;
+}
+a,
+span.exturl {
+  border-bottom: none;
+}
+a:hover,
+span.exturl:hover {
+  color: #ff106c;
+}
+.headband {
+  display: none;
+}
+/* webkit, opera, IE9 */
+::selection {
+  background: #00c4b6;
+  color: #f7f7f7;
+}
+/* firefox */
+::-moz-selection {
+  background: #00c4b6;
+  color: #f7f7f7;
+}
+.highlight *::selection {
+  background: #00c4b6;
+}
+blockquote {
+  border-left: 4px solid #f27c8d;
+}
+.header .header-inner .site-brand-container {
+  background-image: url("/images/bg.png");
+  background-size: 100% 100%;
+  opacity: 0.9;
+}
+.vpower.txt-right {
+  display: none;
+}
+.markdown {
+  display: none;
+}
+.vempty {
+  display: none !important;
 }
