@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+  <link rel="mask-icon" href="/images/favicon.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"linxiao02.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Markdown语法  1.标题两种方法： 1）使用快捷键Ctrl+(1-6) 1）使用#+空格+文字(一个#代表一级，两个代表二级……) 例：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法">
+<meta property="og:url" content="http://linxiao02.github.io/posts/5878.html">
+<meta property="og:site_name" content="小林屋">
+<meta property="og:description" content="Markdown语法  1.标题两种方法： 1）使用快捷键Ctrl+(1-6) 1）使用#+空格+文字(一个#代表一级，两个代表二级……) 例：">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://linxiao02.github.io/Markdown%E8%AF%AD%E6%B3%95.assets/image-20220428151121973.png">
+<meta property="og:image" content="http://linxiao02.github.io/Markdown%E8%AF%AD%E6%B3%95.assets/format,png.png">
+<meta property="article:published_time" content="2022-10-14T14:18:34.000Z">
+<meta property="article:modified_time" content="2022-10-14T14:26:08.529Z">
+<meta property="article:author" content="XiaoLin">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://linxiao02.github.io/Markdown%E8%AF%AD%E6%B3%95.assets/image-20220428151121973.png">
+
+<link rel="canonical" href="http://linxiao02.github.io/posts/5878.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Markdown语法 | 小林屋</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">小林屋</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">键盘敲烂 月薪过万</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://linxiao02.github.io/posts/5878.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="XiaoLin">
+      <meta itemprop="description" content="分享自己喜欢的一切">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小林屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Markdown语法
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-10-14 22:18:34 / 修改时间：22:26:08" itemprop="dateCreated datePublished" datetime="2022-10-14T22:18:34+08:00">2022-10-14</time>
+            </span>
+
+          
+            <span id="/posts/5878.html" class="post-meta-item leancloud_visitors" data-flag-title="Markdown语法" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/posts/5878.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/5878.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 align="center">Markdown语法</h1>
+
+<h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><p>两种方法：</p>
+<p>1）使用快捷键Ctrl+(1-6)</p>
+<p>1）使用#+空格+文字(一个#代表一级，两个代表二级……)</p>
+<p>例：</p>
+<span id="more"></span>
+
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="2-段落"><a href="#2-段落" class="headerlink" title="2.段落"></a>2.段落</h3><p>段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用<strong>两个以上</strong>空格加上回车（引用中换行省略回车）。</p>
+<p>换行不换段：shift+enter</p>
+<p>换段：enter</p>
+<p>如：</p>
+<p>我不换段<br>哈哈哈</p>
+<p>我换了</p>
+<h3 id="3-区块引用"><a href="#3-区块引用" class="headerlink" title="3.区块引用"></a>3.区块引用</h3><p>在段落的每行或者只在第一行使用符号”&gt;”，还可使用多个嵌套引用，如：</p>
+<blockquote>
+<p>区块引用</p>
+<blockquote>
+<p>嵌套引用</p>
+</blockquote>
+</blockquote>
+<h3 id="4-代码区块"><a href="#4-代码区块" class="headerlink" title="4.代码区块"></a>4.代码区块</h3><p>输入法切换为非中文，输入键盘左上角ESc下的按键，连续输入三次 ，在输入对应的编程语言类型，则会出现代码框，即可输入代码。</p>
+<p>代码区块：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    printf(<span class="string">&quot;Hello,Markdown.&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-强调（加粗）"><a href="#5-强调（加粗）" class="headerlink" title="5.强调（加粗）"></a>5.强调（加粗）</h3><p>在强调内容两侧分别加上**或者–</p>
+<p>如：</p>
+<p><strong>加粗</strong></p>
+<h3 id="6-斜体"><a href="#6-斜体" class="headerlink" title="6.斜体"></a>6.斜体</h3><p>在要使用斜体的内容左右两侧加上*或-</p>
+<p>如：</p>
+<p><em>斜体</em></p>
+<h3 id="7-下划线"><a href="#7-下划线" class="headerlink" title="7.下划线"></a>7.下划线</h3><p>HTML的语法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">u</span>&gt;</span>我是下划线<span class="tag">&lt;/<span class="name">u</span>&gt;</span></span><br><span class="line">或者快捷键CTRL+u</span><br></pre></td></tr></table></figure>
+
+<p><u>我是下划线</u></p>
+<h3 id="8-高亮"><a href="#8-高亮" class="headerlink" title="8.高亮"></a>8.高亮</h3><p>在需要加高亮的内容左右两侧加上&#x3D;&#x3D;</p>
+<p>如：</p>
+<p>&#x3D;&#x3D;这是高亮的内容&#x3D;&#x3D;</p>
+<h3 id="9-下标"><a href="#9-下标" class="headerlink" title="9.下标"></a>9.下标</h3><p>如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">水 H~<span class="number">2</span>~O</span><br><span class="line">在下标的左右两端加上~</span><br></pre></td></tr></table></figure>
+
+<p>水  H<del>2</del>O</p>
+<h3 id="10-上标"><a href="#10-上标" class="headerlink" title="10.上标"></a>10.上标</h3><p>如：</p>
+<figure class="highlight parser3"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">面积 m</span><span class="keyword">^2</span><span class="language-xml">^</span></span><br><span class="line"><span class="language-xml">体积 m</span><span class="keyword">^3</span><span class="language-xml">^</span></span><br><span class="line"><span class="language-xml">在上标的左右两端加上^</span></span><br></pre></td></tr></table></figure>
+
+<p>面积 m^2^<br>体积 m^3^</p>
+<h3 id="10-表格"><a href="#10-表格" class="headerlink" title="10.表格"></a>10.表格</h3><ol>
+<li>快捷键：Ctrl+t</li>
+<li>源代码模式下使用|来分隔不同的单元格，使用-来分隔表头和其他行</li>
+</ol>
+<p>如:</p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>年龄</th>
+<th>成绩</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td>11</td>
+<td>19</td>
+</tr>
+<tr>
+<td>索酷</td>
+<td>29</td>
+<td>299</td>
+</tr>
+<tr>
+<td>四去</td>
+<td>29</td>
+<td>210</td>
+</tr>
+</tbody></table>
+<h3 id="11-分割线"><a href="#11-分割线" class="headerlink" title="11.分割线"></a>11.分割线</h3><p>只需要输入三个-符号</p>
+<hr>
+<h3 id="12-删除线"><a href="#12-删除线" class="headerlink" title="12.删除线"></a>12.删除线</h3><p>左右两边加上~~</p>
+<p><del>删除了</del></p>
+<h3 id="13-脚注"><a href="#13-脚注" class="headerlink" title="13.脚注"></a>13.脚注</h3><p>[^文字]</p>
+<p>示例：</p>
+<p>给这段文字加上脚注[^脚注]</p>
+<h3 id="14-有序列表"><a href="#14-有序列表" class="headerlink" title="14.有序列表"></a>14.有序列表</h3><ol>
+<li>快捷键：CTRL+shift+[</li>
+<li>直接输入数字+一点+空格</li>
+</ol>
+<h3 id="15-无序列表"><a href="#15-无序列表" class="headerlink" title="15.无序列表"></a>15.无序列表</h3><ol>
+<li>快捷键：CTRL+shift+]</li>
+<li>直接输入-+空格</li>
+</ol>
+<h3 id="16-链接"><a href="#16-链接" class="headerlink" title="16.链接"></a>16.链接</h3><figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="name">链接名称</span>](<span class="name">图片地址</span>)</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<p>这个一个链接：<a target="_blank" rel="noopener" href="https://baidu.com/">百度</a></p>
+<h3 id="17-图片"><a href="#17-图片" class="headerlink" title="17.图片"></a>17.图片</h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!<span class="selector-attr">[当图片无法显示时的占位符]</span>(图片地址)</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<p><img data-src="/Markdown%E8%AF%AD%E6%B3%95.assets/image-20220428151121973.png" alt="占位符"></p>
+<h3 id="18-内部跳转-本文件内跳转，必须是标题"><a href="#18-内部跳转-本文件内跳转，必须是标题" class="headerlink" title="18.内部跳转-本文件内跳转，必须是标题"></a>18.内部跳转-本文件内跳转，必须是标题</h3><p>格式为<code>[link text](#要去哪个标题)</code></p>
+<p><a href="#1.%E6%A0%87%E9%A2%98">我想跳转到第一个标题</a></p>
+<h3 id="19-自动链接"><a href="#19-自动链接" class="headerlink" title="19.自动链接"></a>19.自动链接</h3><p>使用&lt;&gt;包括的URL或邮箱地址会被直接自动做转换为超链接：</p>
+<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">https://www.baidu.com</a></p>
+<h3 id="20-网上图片"><a href="#20-网上图片" class="headerlink" title="20.网上图片"></a>20.网上图片</h3><p>一样的，把图片路径换为网页路径</p>
+<p>如：</p>
+<p><img data-src="/Markdown%E8%AF%AD%E6%B3%95.assets/format,png.png" alt="网上图片：猫咪"></p>
+<h3 id="21-任务"><a href="#21-任务" class="headerlink" title="21.任务"></a>21.任务</h3><p><code>- [x] 吃饭</code></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 吃饭</li>
+<li><input checked="" disabled="" type="checkbox"> 睡觉</li>
+</ul>
+<h3 id="22-数学公式"><a href="#22-数学公式" class="headerlink" title="22.数学公式"></a>22.数学公式</h3><p>公式左右两边用两个美元符号包围<br>$$<br>\frac{\partial f}{\partial x} &#x3D; 2\sqrt{a}x<br>$$<br>相关数学公式符号可查</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/9478.html" rel="prev" title="Maven">
+      <i class="fa fa-chevron-left"></i> Maven
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/f1de.html" rel="next" title="MyBatis">
+      MyBatis <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Markdown语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%A0%87%E9%A2%98"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.标题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%AE%B5%E8%90%BD"><span class="nav-number">2.1.1.</span> <span class="nav-text">2.段落</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8"><span class="nav-number">2.1.2.</span> <span class="nav-text">3.区块引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E4%BB%A3%E7%A0%81%E5%8C%BA%E5%9D%97"><span class="nav-number">2.1.3.</span> <span class="nav-text">4.代码区块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%BC%BA%E8%B0%83%EF%BC%88%E5%8A%A0%E7%B2%97%EF%BC%89"><span class="nav-number">2.1.4.</span> <span class="nav-text">5.强调（加粗）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E6%96%9C%E4%BD%93"><span class="nav-number">2.1.5.</span> <span class="nav-text">6.斜体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="nav-number">2.1.6.</span> <span class="nav-text">7.下划线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-%E9%AB%98%E4%BA%AE"><span class="nav-number">2.1.7.</span> <span class="nav-text">8.高亮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-%E4%B8%8B%E6%A0%87"><span class="nav-number">2.1.8.</span> <span class="nav-text">9.下标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-%E4%B8%8A%E6%A0%87"><span class="nav-number">2.1.9.</span> <span class="nav-text">10.上标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-%E8%A1%A8%E6%A0%BC"><span class="nav-number">2.1.10.</span> <span class="nav-text">10.表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-%E5%88%86%E5%89%B2%E7%BA%BF"><span class="nav-number">2.1.11.</span> <span class="nav-text">11.分割线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="nav-number">2.1.12.</span> <span class="nav-text">12.删除线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-%E8%84%9A%E6%B3%A8"><span class="nav-number">2.1.13.</span> <span class="nav-text">13.脚注</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="nav-number">2.1.14.</span> <span class="nav-text">14.有序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="nav-number">2.1.15.</span> <span class="nav-text">15.无序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-%E9%93%BE%E6%8E%A5"><span class="nav-number">2.1.16.</span> <span class="nav-text">16.链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-%E5%9B%BE%E7%89%87"><span class="nav-number">2.1.17.</span> <span class="nav-text">17.图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-%E5%86%85%E9%83%A8%E8%B7%B3%E8%BD%AC-%E6%9C%AC%E6%96%87%E4%BB%B6%E5%86%85%E8%B7%B3%E8%BD%AC%EF%BC%8C%E5%BF%85%E9%A1%BB%E6%98%AF%E6%A0%87%E9%A2%98"><span class="nav-number">2.1.18.</span> <span class="nav-text">18.内部跳转-本文件内跳转，必须是标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19-%E8%87%AA%E5%8A%A8%E9%93%BE%E6%8E%A5"><span class="nav-number">2.1.19.</span> <span class="nav-text">19.自动链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20-%E7%BD%91%E4%B8%8A%E5%9B%BE%E7%89%87"><span class="nav-number">2.1.20.</span> <span class="nav-text">20.网上图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E4%BB%BB%E5%8A%A1"><span class="nav-number">2.1.21.</span> <span class="nav-text">21.任务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="nav-number">2.1.22.</span> <span class="nav-text">22.数学公式</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="XiaoLin"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">XiaoLin</p>
+  <div class="site-description" itemprop="description">分享自己喜欢的一切</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/linXiao02" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;linXiao02" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:1849569695@qq.com" title="E-Mail → mailto:1849569695@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">XiaoLin</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">317k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">4:48</span>
+</div>
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("08/10/2021 12:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()",250);
+</script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span><br></span>
+
+<span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+</span>
+<span>总访客&nbsp<span id="busuanzi_value_site_uv"></span>&nbsp人</span>
+    <span class="post-meta-divider">|</span>
+<span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+</span>
+    <span>总访问量&nbsp<span id="busuanzi_value_site_pv"></span>&nbsp次</span>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : '1Cu8GgUBJAEFY6zQnBBwsG6j-gzGzoHsz',
+      appKey     : 'eALJbOTb6iHtCBiGucb0c0tv',
+      placeholder: "欢迎大家评论✧*٩(ˊᗜˋ*)و✧*",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
