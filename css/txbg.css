@@ -1,0 +1,5 @@
+/* 效果二：花 */
+.card-info>.is-center:hover {
+  background: url(https://gcore.jsdelivr.net/gh/rigodlee/BLOGCDN/img/20200530181856.gif);
+}
+
