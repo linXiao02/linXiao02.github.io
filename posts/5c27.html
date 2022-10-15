@@ -1106,7 +1106,7 @@
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikko.vercel.app/',
+      envId: 'twikoo-1g9t7f62161710f5',
       region: 'ap-shanghai',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -1118,7 +1118,7 @@
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://twikko.vercel.app/',
+      envId: 'twikoo-1g9t7f62161710f5',
       region: 'ap-shanghai',
       urls: [window.location.pathname],
       includeReply: false
