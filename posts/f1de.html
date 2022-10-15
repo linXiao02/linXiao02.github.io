@@ -314,7 +314,7 @@ FATAL(致命)>ERROR(错误)>WARN(警告)>INFO(信息)>DEBUG(调试)
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
       envId: 'https://twikoo.xiaolin-blog.top/',
-      region: 'ap-shanghai',
+      region: '',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
       }
@@ -326,7 +326,7 @@ FATAL(致命)>ERROR(错误)>WARN(警告)>INFO(信息)>DEBUG(调试)
     if(!countELement) return
     twikoo.getCommentsCount({
       envId: 'https://twikoo.xiaolin-blog.top/',
-      region: 'ap-shanghai',
+      region: '',
       urls: [window.location.pathname],
       includeReply: false
     }).then(function (res) {
