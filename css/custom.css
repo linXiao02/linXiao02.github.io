@@ -1,5 +1,17 @@
-@import "//at.alicdn.com/t/c/font_3717155_1yohpmnwn63.css";
+@import "//at.alicdn.com/t/c/font_3717155_19hh0a3gc9.css";
 
+.iconfont {
+    font-family: "iconfont" !important;
+    /* font-size: 3em; */
+    /* 可以定义图标大小 */
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+
+.menus_items a:hover{
+    background-color: aqua;
+}
 
 #nav-right{
     flex:1 1 auto;
@@ -59,8 +71,9 @@
     font-family: "Font Awesome 6 Free";
     text-align: center;
     color:white;
-    line-height:34px;/*如果有溢出或者垂直不居中的现象微调一下这个参数*/
-    font-size: 18px;/*根据个人喜好*/
+
+    line-height: 40px;/*如果有溢出或者垂直不居中的现象微调一下这个参数*/
+    font-size: 22px;/*根据个人喜好*/
 }
 #site-name:hover::before{
     opacity: 1;
@@ -144,6 +157,248 @@
 
 
 
+#article-container .flink .flink-list {
+    text-align: left!important;
+}
+.flink-item-name, .flink-item-desc {
+    color: white!important;
+}
 
 
+
+
+#cursor {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    background: orange;
+    border-radius: 8px;
+    opacity: 0.8;
+    z-index: 10086;
+    pointer-events: none;
+    transition: 0.2s ease-in-out;
+    transition-property: background, opacity, transform;
+}
+
+#cursor.hidden {
+    opacity: 0;
+}
+
+#cursor.hover {
+    opacity: 0.1;
+    transform: scale(2.5);
+}
+
+#cursor.active {
+    opacity: 0.5;
+    transform: scale(0.5);
+}
+
+
+
+
+/* 切换背景图片 */
+.bgbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pimgbox,
+.imgbox,
+.box {
+    width: 166px;
+    margin: 10px;
+    background-size: cover
+}
+
+.pimgbox,
+.imgbox {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pimgbox {
+    height: 240px;
+}
+
+.imgbox {
+    height: 95px;
+}
+
+.box {
+    height: 100px;
+}
+
+#color {
+    border: none;
+    background: transparent;
+    width: 166px;
+    height: 110px;
+    margin: 5px 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#color::before {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 38px;
+    top: 44px;
+    content: '自定义颜色';
+}
+@media screen and (min-width: 768px) {
+    /* 页面宽度 */
+    .page #content-inner {
+        max-width: 1200px !important;
+        padding: 40px 0;
+    }
+    /* 顶部导航 */
+    .menus_item>a>span {
+        padding-left: 8px;
+    }
+    .menus_item>a {
+        border-radius: 8px;
+        padding: 12px 20px !important;
+        letter-spacing: 8px;
+        font-weight: bold
+    }
+    .menus_item>a i {
+        display: none;
+    }
+    a#site-name {
+        font-size: 25px !important;
+        padding: 8.5px 12px !important;
+    }
+    /* 文章卡片 */
+    #recent-posts>.recent-post-item {
+        height: 14rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* 背景 */
+    .pimgbox,
+    .imgbox,
+    .box {
+        height: 73px;
+        width: 135px;
+    }
+    .pimgbox {
+        height: 205px;
+    }
+    #color {
+        width: 141px;
+        height: 83px;
+        margin: 7px;
+    }
+    #color::before {
+        left: 33px;
+        top: 33px;
+    }
+}
+
+
+
+/* 由于全屏会出bug，所以直接给他隐藏 */
+
+.winbox {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.wb-full {
+    display: none;
+}
+
+.wb-min {
+    background-position: center;
+}
+
+[data-theme='dark'] .wb-body,
+[data-theme='dark'] #changeBgBox {
+    background: #333 !important;
+}
+
+.bgbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pimgbox,
+.imgbox,
+.box {
+    width: 166px;
+    margin: 10px;
+    background-size: cover
+}
+
+.pimgbox,
+.imgbox {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pimgbox {
+    height: 240px;
+}
+
+.imgbox {
+    height: 95px;
+}
+
+.box {
+    height: 100px;
+}
+
+/* 老用户如果不再使用页面版可删除下面代码 */
+/* #color {
+    border: none;
+    background: transparent;
+    width: 166px;
+    height: 110px;
+    margin: 5px 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#color::before {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 38px;
+    top: 44px;
+    content: '自定义颜色';
+} */
+
+@media screen and (max-width: 768px) {
+    /* 背景 */
+    .pimgbox,
+    .imgbox,
+    .box {
+        height: 73px;
+        width: 135px;
+    }
+    .pimgbox {
+        height: 205px;
+    }
+    /* 老用户如果不再使用页面版可删除下面代码 */
+    /* #color {
+        width: 141px;
+        height: 83px;
+        margin: 7px;
+    }
+    #color::before {
+        left: 33px;
+        top: 33px;
+    }     */
+
+    /* 2.0新增内容 */    
+    .wb-min {
+        display: none;
+    }
+    #changeBgBox .wb-body::-webkit-scrollbar {
+        display: none;
+    }
+}
 
