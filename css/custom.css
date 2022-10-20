@@ -21,6 +21,9 @@
     flex-wrap:nowrap;
 }
 
+#nav{
+    font-size: 26px;
+}
 
 
 
@@ -141,7 +144,7 @@
     text-align: center;
     opacity: 0;
     box-shadow: 0 0 3px var(--lyx-theme);
-    line-height: 40px; /*如果垂直位置不居中可以微调此值，也可以删了*/
+    line-height: 50px; /*如果垂直位置不居中可以微调此值，也可以删了*/
 }
 #page-name:hover:before{
     opacity: 1;
@@ -359,24 +362,7 @@
     height: 100px;
 }
 
-/* 老用户如果不再使用页面版可删除下面代码 */
-/* #color {
-    border: none;
-    background: transparent;
-    width: 166px;
-    height: 110px;
-    margin: 5px 10px;
-    position: relative;
-    cursor: pointer;
-}
 
-#color::before {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    left: 38px;
-    top: 44px;
-    content: '自定义颜色';
-} */
 
 @media screen and (max-width: 768px) {
     /* 背景 */
