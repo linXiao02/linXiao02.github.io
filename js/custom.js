@@ -133,7 +133,16 @@ function changeBg(s, flag) {
 }
 
 
-
+function whenDOMReady() {
+    // 背景localstorage
+    try {
+        let data = loadData('blogbg', 1440)
+        if (data) changeBg(data, 1)
+        else localStorage.removeItem('blogbg');
+    } catch (error) { localStorage.removeItem('blogbg'); }
+}
+whenDOMReady()
+document.addEventListener("pjax:success", whenDOMReady)
 
 
 
@@ -180,43 +189,43 @@ function createWinbox() {
               <div class="bgbox">
 
               <a href="javascript:;" rel="noopener external nofollow" 
-               style="background-image:url(https://source.fomal.cc/img/home_bg.webp)"
-                class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/home_bg.webp)')">
+               style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm6.webp)"
+                class="imgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm6.webp)')">
                 </a>
 
                 <a href="javascript:;" rel="noopener external nofollow" 
-                style="background-image:url(https://source.fomal.cc/img/dark_mode.webp)"
-                 class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/dark_mode.webp)')">
+                style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm7.webp)"
+                 class="imgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm7.webp)')">
                  </a>
 
                  <a href="javascript:;" rel="noopener external nofollow"
-                  style="background-image:url(https://source.fomal.cc/img/dm2.webp)"
-                   class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/dm2.webp)')">
+                  style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm11.webp)"
+                   class="imgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm11.webp)')">
                    </a>
 
                    <a href="javascript:;" rel="noopener external nofollow" 
-                   style="background-image:url(https://source.fomal.cc/img/dm14.webp)"
-                    class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/dm14.webp)')">
+                   style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm12.webp)"
+                    class="imgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm12.webp)')">
                     </a>
                     
                     <a href="javascript:;" rel="noopener external nofollow"
-                     style="background-image:url(https://source.fomal.cc/img/dm8.webp)" 
-                     class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/dm8.webp)')">
+                     style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm2.webp)" 
+                     class="imgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm2.webp)')">
                      </a>
                      
                      <a href="javascript:;" rel="noopener external nofollow" 
-                     style="background-image:url(https://source.fomal.cc/img/dm9.webp)" 
-                     class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/dm9.webp)')">
+                     style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm3.webp)" 
+                     class="imgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm3.webp)')">
                      </a>
                      
                      <a href="javascript:;" rel="noopener external nofollow" 
-                     style="background-image:url(https://source.fomal.cc/img/dm11.webp)" 
-                     class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/dm11.webp)')">
+                     style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm4.webp)" 
+                     class="imgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm4.webp)')">
                      </a>
 
                      <a href="javascript:;" rel="noopener external nofollow"
-                      style="background-image:url(https://source.fomal.cc/img/dm12.webp)"
-                       class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/dm12.webp)')">
+                      style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm5.webp)"
+                       class="imgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/dm5.webp)')">
                        </a>
 
                     </div>
@@ -351,36 +360,36 @@ function createWinbox() {
               <div class="content">
               <div class="bgbox">
               <a href="javascript:;" rel="noopener external nofollow" 
-              style="background-image:url(https://source.fomal.cc/img/mb4.webp)" 
-              class="pimgbox" onclick="changeBg('url(https://source.fomal.cc/img/mb4.webp)')"></a>
+              style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb16.webp)" 
+              class="pimgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb16.webp)')"></a>
               
               <a href="javascript:;" rel="noopener external nofollow" 
-              style="background-image:url(https://source.fomal.cc/img/mb5.webp)" class="pimgbox" 
-              onclick="changeBg('url(https://source.fomal.cc/img/mb5.webp)')"></a>
+              style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb8.webp)" class="pimgbox" 
+              onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb8.webp)')"></a>
               
               <a href="javascript:;" rel="noopener external nofollow" 
-              style="background-image:url(https://source.fomal.cc/img/mb6.webp)" class="pimgbox" 
-              onclick="changeBg('url(https://source.fomal.cc/img/mb6.webp)')"></a>
+              style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb7.webp)" class="pimgbox" 
+              onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb7.webp)')"></a>
               
               <a href="javascript:;" rel="noopener external nofollow" 
-              style="background-image:url(https://source.fomal.cc/img/mb7.webp)" 
-              class="pimgbox" onclick="changeBg('url(https://source.fomal.cc/img/mb7.webp)')"></a>
+              style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb15.webp)" 
+              class="pimgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb15.webp)')"></a>
               
               <a href="javascript:;" rel="noopener external nofollow" 
-              style="background-image:url(https://source.fomal.cc/img/mb8.webp)" class="pimgbox" 
-              onclick="changeBg('url(https://source.fomal.cc/img/mb8.webp)')"></a>
+              style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb19.webp)" class="pimgbox" 
+              onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb19.webp)')"></a>
               
               <a href="javascript:;" rel="noopener external nofollow" 
-              style="background-image:url(https://source.fomal.cc/img/mb9.webp)" class="pimgbox" 
-              onclick="changeBg('url(https://source.fomal.cc/img/mb9.webp)')"></a>
+              style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb17.webp)" class="pimgbox" 
+              onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb17.webp)')"></a>
               
               <a href="javascript:;" rel="noopener external nofollow" 
-              style="background-image:url(https://source.fomal.cc/img/mb16.webp)" 
-              class="pimgbox" onclick="changeBg('url(https://source.fomal.cc/img/mb16.webp)')"></a>
+              style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb1.webp)" 
+              class="pimgbox" onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb1.webp)')"></a>
               
               <a href="javascript:;" rel="noopener external nofollow" 
-              style="background-image:url(https://source.fomal.cc/img/mb19.webp)" class="pimgbox" 
-              onclick="changeBg('url(https://source.fomal.cc/img/mb19.webp)')"></a>
+              style="background-image:url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb4.webp)" class="pimgbox" 
+              onclick="changeBg('url(https://gitee.com/lin-xugeng/md-img/raw/master/img/mb4.webp)')"></a>
               
               </div>
               </div>
