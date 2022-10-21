@@ -1,9 +1,10 @@
-@import "//at.alicdn.com/t/c/font_3717155_huoncmsi5dm.css";
+@import "//at.alicdn.com/t/c/font_3717155_bt06tcp7jgp.css";
 
 .iconfont {
     font-family: "iconfont" !important;
    
     /* 可以定义图标大小 */
+    font-size: 24px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
