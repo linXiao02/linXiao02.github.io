@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'basefont';
+    font-display: swap;
+    src: url('./也字工厂苍南手迹.ttf') format("truetype");
+}
+
+
+@font-face{
+    font-family:YSHST;
+    src:url(https://source.fomal.cc/fonts/优设好身体.woff2);
+    font-display:swap
+}
+
+@font-face{
+    font-family:MiSans;
+    src:url(https://source.fomal.cc/fonts/MiSans.woff2);
+    font-display:swap
+}
+
+@font-face{
+    font-family:HYTMR;
+    src:url(https://source.fomal.cc/fonts/HYTangMeiRen55W.woff2);
+    font-display:swap
+}
+
+@font-face{
+    font-family:LXGW;
+    src:url(https://source.fomal.cc/fonts/霞鹜文楷.woff2);
+    font-display:swap
+}
+
+@font-face{
+    font-family:TTQHB;
+    src:url(https://source.fomal.cc/fonts/甜甜圈海报字体.woff2);
+    font-display:swap
+}
+
+@font-face{
+    font-family:Consolas_1;
+    src:url(https://source.fomal.cc/fonts/Consolas.woff2);
+    font-display:swap
+}
+
+@font-face{
+    font-family:ZhuZiAWan_light;
+    src:url(https://source.fomal.cc/fonts/ZhuZiAWan2.woff2);
+    font-display:swap
+}

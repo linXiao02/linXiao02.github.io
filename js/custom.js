@@ -157,7 +157,7 @@ function createWinbox() {
     winbox = WinBox({
         id: 'changeBgBox',
         index: 999,
-        title: "切换背景",
+        title: "一些设置",
         x: "center",
         y: "center",
         minwidth: '300px',
@@ -170,7 +170,35 @@ function createWinbox() {
     window.addEventListener('resize', winResize)
 
     winbox.body.innerHTML = `
+    
     <div id="article-container" style="padding:15px;">
+    \n<br>\n<center><p><button onclick="reset()" style="background:linear-gradient(to right, #114357, #f29492);display:block;width:40%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i>点这里恢复默认设置</button></p></center>\n\n
+    <h2>一、字体设置</h2>\n
+    <div class="note warning simple"><p>注意：非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，站长不会由此获利一分钱，如涉及侵权请联系站长删除，谢谢！ —— 致版权方</p>
+    \n</div>\n<p id="swfs">\n<a class="swf" href="javascript:;" rel="noopener external nofollow" 
+    style="font-family:\'ZhuZiAWan\'!important;color:black" 
+    onclick="setFont(\'ZhuZiAWan_light\')">筑紫A丸ゴシック</a>
+    \n<a class="swf" href="javascript:;" rel="noopener external nofollow" 
+    style="font-family:\'HYTMR\'!important;color:black" 
+    onclick="setFont(\'HYTMR\')">汉仪唐美人</a>\n<a class="swf" 
+    href="javascript:;" rel="noopener external nofollow" 
+    style="font-family:\'LXGW\'!important;color:black" 
+    onclick="setFont(\'LXGW\')">霞鹜文楷</a>\n<a class="swf" 
+    href="javascript:;" rel="noopener external nofollow" 
+    style="font-family:\'TTQHB\'!important;color:black" 
+    onclick="setFont(\'TTQHB\')">甜甜圈海报</a>\n<a class="swf" 
+    href="javascript:;" rel="noopener external nofollow" 
+    style="font-family:\'YSHST\'!important;color:black" 
+    onclick="setFont(\'YSHST\')">优设好身体</a>\n<a class="swf" 
+    href="javascript:;" rel="noopener external nofollow" 
+    style="font-family:\'MiSans\'!important;color:black" 
+    onclick="setFont(\'MiSans\')">MiSans</a>\n<a class="swf" 
+    href="javascript:;" rel="noopener external nofollow" 
+    style="font-family:-apple-system, IBM Plex Mono ,monosapce,\'微软雅黑\', 
+    sans-serif;!important;color:black" onclick="setFont(\'main\')">系统默认</a>\n</p>
+
+
+    <h2>二、背景设置</h2>\n
 <div class="note info flat"><p>点击对应图片就可实现背景切换，自定义背景会保留一天，一天后自动恢复为默认背景！</p>
 </div>
 
@@ -181,7 +209,6 @@ function createWinbox() {
  点我恢复默认背景</button>
  </p>
  </center>
-
 <h2>二次元</h2>
 <details class="folding-tag" blue="" open=""><summary> 查看二次元背景 </summary>
               <div class="content">

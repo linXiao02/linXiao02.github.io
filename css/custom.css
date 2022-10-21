@@ -1,5 +1,11 @@
 @import "//at.alicdn.com/t/c/font_3717155_bt06tcp7jgp.css";
 
+
+
+
+
+
+
 .iconfont {
     font-family: "iconfont" !important;
    
@@ -396,3 +402,21 @@
     }
 }
 
+
+
+#swfs{
+    width: 1000px ;
+    font-size: 20px;
+    height: 120px;
+}
+
+#swfs a{
+    float: left;
+    display: block;
+    margin-right: 30px;
+    height: 70px;
+    line-height: 70px;
+    background-color: skyblue;
+    border-radius: 8%;
+    padding: 0 4px;
+}
