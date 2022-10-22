@@ -3349,9 +3349,10 @@ having
       </categories>
   </entry>
   <entry>
-    <title></title>
-    <url>/posts/0.html</url>
-    <content><![CDATA[<h1 id="Spring-Security"><a href="#Spring-Security" class="headerlink" title="Spring Security"></a>Spring Security</h1><h2 id="一、Spring-Security框架简介"><a href="#一、Spring-Security框架简介" class="headerlink" title="一、Spring Security框架简介"></a>一、Spring Security框架简介</h2><h3 id="1、概要"><a href="#1、概要" class="headerlink" title="1、概要"></a>1、概要</h3><p><img src="https://gitee.com/lin-xugeng/image/raw/master/img/202210221658242.png" alt="image-20220906093436750"></p>
+    <title>SpringSecurity</title>
+    <url>/posts/ceb1.html</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer" /></p>
+<h1 id="Spring-Security"><a href="#Spring-Security" class="headerlink" title="Spring Security"></a>Spring Security</h1><h2 id="一、Spring-Security框架简介"><a href="#一、Spring-Security框架简介" class="headerlink" title="一、Spring Security框架简介"></a>一、Spring Security框架简介</h2><h3 id="1、概要"><a href="#1、概要" class="headerlink" title="1、概要"></a>1、概要</h3><p><img src="https://gitee.com/lin-xugeng/image/raw/master/img/202210221658242.png" alt="image-20220906093436750"></p>
 <p><img src="https://gitee.com/lin-xugeng/image/raw/master/img/202210221658243.png" alt="image-20220906093511578"></p>
 <h3 id="2、历史"><a href="#2、历史" class="headerlink" title="2、历史"></a>2、历史</h3><p><img src="https://gitee.com/lin-xugeng/image/raw/master/img/202210221658244.png" alt="image-20220906093714702"></p>
 <p><img src="https://gitee.com/lin-xugeng/image/raw/master/img/202210221658245.png" alt="image-20220906093830649"></p>
@@ -3694,6 +3695,9 @@ having
 <p><img src="https://gitee.com/lin-xugeng/image/raw/master/img/202210221658305.png" alt="image-20220913153614077"></p>
 <p><img src="https://gitee.com/lin-xugeng/image/raw/master/img/202210221658306.png" alt="image-20220913153625823"></p>
 ]]></content>
+      <categories>
+        <category>Spring全家桶</category>
+      </categories>
   </entry>
   <entry>
     <title>JDBCTemplate</title>
