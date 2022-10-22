@@ -3254,6 +3254,18 @@ li.categoryBar-list-item:nth-child(7) {
 li.categoryBar-list-item:nth-child(8) {
   background: url('https://gitee.com/lin-xugeng/md-img/raw/master/img/dm11.webp');
 }
+li.categoryBar-list-item:nth-child(9) {
+  background: url('https://gitee.com/lin-xugeng/md-img/raw/master/img/dm7.webp');
+}
+li.categoryBar-list-item:nth-child(10) {
+  background: url('https://gitee.com/lin-xugeng/md-img/raw/master/img/dm11.webp');
+}
+li.categoryBar-list-item:nth-child(11) {
+  background: url('https://gitee.com/lin-xugeng/md-img/raw/master/img/dm7.webp');
+}
+li.categoryBar-list-item:nth-child(12) {
+  background: url('https://gitee.com/lin-xugeng/md-img/raw/master/img/dm11.webp');
+}
 li.categoryBar-list-item:nth-child(1)>span::after {
   content: 1 !important;
 }
