@@ -3248,23 +3248,41 @@ li.categoryBar-list-item:nth-child(5) {
 li.categoryBar-list-item:nth-child(6) {
   background: url('https://gitee.com/lin-xugeng/md-img/raw/master/img/dm11.webp');
 }
+li.categoryBar-list-item:nth-child(7) {
+  background: url('https://gitee.com/lin-xugeng/md-img/raw/master/img/dm7.webp');
+}
+li.categoryBar-list-item:nth-child(8) {
+  background: url('https://gitee.com/lin-xugeng/md-img/raw/master/img/dm11.webp');
+}
 li.categoryBar-list-item:nth-child(1)>span::after {
-  content: '一起学习Git吧！' !important;
+  content: 1 !important;
 }
 li.categoryBar-list-item:nth-child(2)>span::after {
-  content: '学会就能更好地记笔记！' !important;
+  content: 2 !important;
 }
 li.categoryBar-list-item:nth-child(3)>span::after {
-  content: '一起学习前端吧！' !important;
+  content: 3 !important;
 }
 li.categoryBar-list-item:nth-child(4)>span::after {
-  content: '一起学习后端吧！' !important;
+  content: 4 !important;
 }
 li.categoryBar-list-item:nth-child(5)>span::after {
-  content: !important;
+  content: 5 !important;
 }
 li.categoryBar-list-item:nth-child(6)>span::after {
-  content: !important;
+  content: 6 !important;
+}
+li.categoryBar-list-item:nth-child(7)>span::after {
+  content: 7 !important;
+}
+li.categoryBar-list-item:nth-child(8)>span::after {
+  content: 8 !important;
+}
+li.categoryBar-list-item:nth-child(9)>span::after {
+  content: 9 !important;
+}
+li.categoryBar-list-item:nth-child(10)>span::after {
+  content: 10 !important;
 }
 li.categoryBar-list-item {
   width: 32.3% !important;
@@ -3277,7 +3295,7 @@ li.categoryBar-list-item {
   }
 }
 .categoryBar-list {
-  max-height: 190px;
+  max-height: 380px;
   overflow: auto;
 }
 .categoryBar-list::-webkit-scrollbar {
@@ -3285,7 +3303,7 @@ li.categoryBar-list-item {
 }
 @media screen and (max-width: 650px) {
   .categoryBar-list {
-    max-height: 160px;
+    max-height: 320px;
   }
 }
 #post-comment .comment-head {
